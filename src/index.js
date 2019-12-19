@@ -12,34 +12,39 @@ template.createHeader();
 template.createMain();
 template.createNav();
 template.createFooter();
+template.createCard();
 
 const clearInfo = () => {
   const mainCard = document.querySelector('.main__card');
   mainCard.innerHTML = "";
 }
 
-const renderInfo = (dish) => {
-  clearInfo();
+const renderInfo = (dish, dishName) => {
   const mainCard = document.querySelector('.main__card');
-  mainCard.insertAdjacentHTML('afterbegin', `<h3 class='dish-header'>${dish.id}</h3>`);
+  mainCard.insertAdjacentHTML('afterbegin', content.mainCardContent);
   const mainCardContent = document.querySelector('.main__card-content');
   mainCard.style.display = 'flex';
+  mainCard.insertAdjacentHTML('afterbegin', `<h3>${dishName}</h3>`);
   mainCardContent.insertAdjacentHTML('afterbegin', dish);
 }
 
 const handleClick = (element) => {
   switch (element.target.id) {
     case 'pizza':
-      renderInfo(content.pizza);
+      clearInfo();
+      renderInfo(content.pizza, 'Pizza');
       break;
-    case 'hamburguer':
-      renderInfo(content.hamburguer);
+    case 'hamburger':
+      clearInfo();
+      renderInfo(content.hamburger, 'Hamburger');
       break;
     case 'wings':
-      renderInfo(content.wings);
+      clearInfo();
+      renderInfo(content.wings, 'Wings');
       break;
     case 'reservations':
-      renderInfo(content.reservations);
+      clearInfo();
+      renderInfo(content.reservations, 'Reservations');
       break;
   }
 }

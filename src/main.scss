@@ -109,10 +109,8 @@ header{
   &-content{
    display: flex;
     &-left {
-      width: 50rem;
-      height: 30rem;
       margin-left: 2rem;
-      border-radius: 3px;
+      width: 50rem;
     }
     &-right {
       font-weight: normal;

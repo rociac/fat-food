@@ -19,3 +19,8 @@ export const createFooter = () => {
   const footerContainer = document.querySelector('.main');
   footerContainer.insertAdjacentHTML('afterend', content.footer);
 }
+
+export const createCard = () => {
+  const cardContainer = document.querySelector('.main');
+  cardContainer.insertAdjacentHTML('beforeend', content.mainCard);
+}
