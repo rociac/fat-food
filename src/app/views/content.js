@@ -61,4 +61,3 @@ export const wings = `
 
           <p class="main__card-content-right">A Buffalo wing, in the cuisine of the United States, is an unbreaded chicken wing section (flat or drumette) that is generally deep-fried then coated or dipped in a sauce consisting of a vinegar-based cayenne pepper hot sauce and melted butter prior to serving. They are traditionally served hot, along with celery sticks and carrot sticks with blue cheese dressing or ranch dressing for dipping. Locals refer to them merely as "wings."</p>
 `;
-
