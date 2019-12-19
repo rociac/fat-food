@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/rociac/fat-food/webpack/src/template.html)
+[Live Demo Link](https://raw.githack.com/rociac/fat-food/webpack/dist/index.html)
 
 ## Installation
 
