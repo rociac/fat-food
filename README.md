@@ -1,6 +1,6 @@
 # fat-food.
 
-> This project is a Todo List built with JavaScript. You can add projects and in each project you can add several tasks that have a priority, dueDate, title and description.
+> This project is a restaurant landing page, all the content is generated and rendered through JavaScript. This project uses webpack to bundle all the files included. 
 
 ![fat-food](screenshotRestaurant.png)
 
