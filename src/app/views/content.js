@@ -2,7 +2,7 @@ export const header = `
   <header>
     <h1 class="site__header">fat-food.</h1>
   </header>
-`
+`;
 
 export const nav = `
     <nav class="nav">
@@ -26,7 +26,7 @@ export const mainCard = `
   </div>
 `;
 
-export const mainCardContent = `<div class="main__card-content"></div>`
+export const mainCardContent = '<div class="main__card-content"></div>';
 
 export const footer = `
   <div class="footer">

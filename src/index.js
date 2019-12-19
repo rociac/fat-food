@@ -1,11 +1,10 @@
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
 import * as template from './app/views/template';
 import * as content from './app/views/content';
 import './main.scss';
-
 
 
 template.createHeader();
@@ -16,8 +15,8 @@ template.createCard();
 
 const clearInfo = () => {
   const mainCard = document.querySelector('.main__card');
-  mainCard.innerHTML = "";
-}
+  mainCard.innerHTML = '';
+};
 
 const renderInfo = (dish, dishName) => {
   const mainCard = document.querySelector('.main__card');
@@ -26,7 +25,7 @@ const renderInfo = (dish, dishName) => {
   mainCard.style.display = 'flex';
   mainCard.insertAdjacentHTML('afterbegin', `<h3>${dishName}</h3>`);
   mainCardContent.insertAdjacentHTML('afterbegin', dish);
-}
+};
 
 const handleClick = (element) => {
   switch (element.target.id) {
@@ -46,10 +45,8 @@ const handleClick = (element) => {
       clearInfo();
       renderInfo(content.reservations, 'Reservations');
       break;
+    default:
   }
-}
+};
 
 window.addEventListener('click', handleClick);
-
-
-
