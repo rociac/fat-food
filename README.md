@@ -2,7 +2,7 @@
 
 > This project is a Todo List built with JavaScript. You can add projects and in each project you can add several tasks that have a priority, dueDate, title and description.
 
-![screenshot](screenshotRestaurant.png)
+![fat-food](screenshotRestaurant.png)
 
 
 ## Built With
@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/rociac/ToDoList-JS/feature/dist/index.html)
+[Live Demo Link](https://raw.githack.com/rociac/fat-food/webpack/src/template.html)
 
 ## Installation
 
