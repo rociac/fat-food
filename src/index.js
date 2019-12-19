@@ -41,10 +41,6 @@ const handleClick = (element) => {
       clearInfo();
       renderInfo(content.wings, 'Wings');
       break;
-    case 'reservations':
-      clearInfo();
-      renderInfo(content.reservations, 'Reservations');
-      break;
     default:
   }
 };
