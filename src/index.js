@@ -2,8 +2,8 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
-import * as template from './app/views/template';
-import * as content from './app/views/content';
+import template from './app/views/template';
+import Content from './app/views/content';
 import './main.scss';
 
 
@@ -20,7 +20,7 @@ const clearInfo = () => {
 
 const renderInfo = (dish, dishName) => {
   const mainCard = document.querySelector('.main__card');
-  mainCard.insertAdjacentHTML('afterbegin', content.mainCardContent);
+  mainCard.insertAdjacentHTML('afterbegin', Content.mainCardContent);
   const mainCardContent = document.querySelector('.main__card-content');
   mainCard.style.display = 'flex';
   mainCard.insertAdjacentHTML('afterbegin', `<h3>${dishName}</h3>`);
@@ -31,15 +31,15 @@ const handleClick = (element) => {
   switch (element.target.id) {
     case 'pizza':
       clearInfo();
-      renderInfo(content.pizza, 'Pizza');
+      renderInfo(Content.pizza, 'Pizza');
       break;
     case 'hamburger':
       clearInfo();
-      renderInfo(content.hamburger, 'Hamburger');
+      renderInfo(Content.hamburger, 'Hamburger');
       break;
     case 'wings':
       clearInfo();
-      renderInfo(content.wings, 'Wings');
+      renderInfo(Content.wings, 'Wings');
       break;
     default:
   }

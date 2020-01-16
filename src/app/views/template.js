@@ -1,26 +1,39 @@
-import * as content from './content';
+import Content from './content';
 
-export const createMain = () => {
-  const div = document.querySelector('.container');
-  div.insertAdjacentHTML('afterbegin', content.main);
-};
+const Template = (() => {
+  const createMain = () => {
+    const div = document.querySelector('.container');
+    div.insertAdjacentHTML('afterbegin', Content.main);
+  }
 
-export const createHeader = () => {
-  const body = document.querySelector('body');
-  body.insertAdjacentHTML('afterbegin', content.header);
-};
+  const createHeader = () => {
+    const body = document.querySelector('body');
+    body.insertAdjacentHTML('afterbegin', Content.header);
+  }
 
-export const createNav = () => {
-  const navContainer = document.querySelector('.main');
-  navContainer.insertAdjacentHTML('afterbegin', content.nav);
-};
+  const createNav = () => {
+    const navContainer = document.querySelector('.main');
+    navContainer.insertAdjacentHTML('afterbegin', Content.nav);
+  }
 
-export const createFooter = () => {
-  const footerContainer = document.querySelector('.main');
-  footerContainer.insertAdjacentHTML('afterend', content.footer);
-};
+  const createFooter = () => {
+    const footerContainer = document.querySelector('.main');
+    footerContainer.insertAdjacentHTML('afterend', Content.footer);
+  }
 
-export const createCard = () => {
-  const cardContainer = document.querySelector('.main');
-  cardContainer.insertAdjacentHTML('beforeend', content.mainCard);
-};
+  const createCard = () => {
+    const cardContainer = document.querySelector('.main');
+    cardContainer.insertAdjacentHTML('beforeend', Content.mainCard);
+  }
+
+  return {
+    createMain,
+    createHeader,
+    createNav,
+    createFooter,
+    createCard
+  }
+})();
+
+export default Template;
+
