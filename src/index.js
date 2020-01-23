@@ -4,6 +4,10 @@ import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 import template from './app/views/template';
 import Content from './app/views/content';
+import Pizza from './app/views/pizza';
+import Hamburger from './app/views/hamburger';
+import Wings from './app/views/wings';
+import Reservations from './app/views/reservations';
 import './main.scss';
 
 
@@ -31,17 +35,21 @@ const handleClick = (element) => {
   switch (element.target.id) {
     case 'pizza':
       clearInfo();
-      renderInfo(Content.pizza, 'Pizza');
+      renderInfo(Pizza.info, Pizza.name);
       break;
     case 'hamburger':
       clearInfo();
-      renderInfo(Content.hamburger, 'Hamburger');
+      renderInfo(Hamburger.info, Hamburger.name);
       break;
     case 'wings':
       clearInfo();
-      renderInfo(Content.wings, 'Wings');
+      renderInfo(Wings.info, Wings.name);
       break;
+    case 'reservations':
+      clearInfo();
+      renderInfo(Reservations.form, Reservations.name);
     default:
+      break;
   }
 };
 

@@ -26,7 +26,7 @@ header{
   padding-top: 5px;
 }
 
-#reservations {
+.reservations {
   background-color: black;
   padding: 1rem;
   margin-top: -0.5rem;
@@ -35,12 +35,13 @@ header{
   &:hover{
     border-top-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
-     background-color: #333;
+    background-color: #333;
     transition: 0.3s;
   }
-  a {
-    color: white;
-  }
+}
+
+#reservations {
+  color: white;
 }
 
 .site__header {
@@ -61,7 +62,7 @@ header{
     align-items: center;
     list-style-type: none;
     font-size: 0.3rem 0.7rem;
-    width: 20%;
+    width: 23%;
     padding: 0.5rem 1rem;
     li a{
         text-decoration: none;
@@ -96,8 +97,6 @@ header{
   flex-direction: column;
   background-color: white;
   color: black;
-  animation-name: card;
-  animation-duration: 0.6s;
   h3 {
     font-size: 1.8rem;
     text-align: center;
@@ -106,7 +105,7 @@ header{
     text-transform: uppercase;
   }
   &-content{
-   display: flex;
+  display: flex;
     &-left {
       margin-left: 2rem;
       width: 50rem;
@@ -121,15 +120,6 @@ header{
     }
   }
 
-}
-
-@keyframes card {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .footer {
@@ -158,3 +148,51 @@ header{
     }
   }
 }
+
+.form__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    input {
+      width: 50rem;
+      height: 4rem;
+      margin-bottom: 1.5rem;
+      border: 2px solid black;
+      padding: 1rem;
+      box-shadow: none;
+      font-size: 1.6rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+#persons {
+  width: 10rem;
+  margin: auto;
+}
+
+.btn {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  width: 30rem;
+  margin: 1.5rem auto;
+  &:hover {
+    color: rgba(255, 255, 255, 0.842);
+    background-color: gray;
+    cursor: pointer;
+  }
+}
+
+
